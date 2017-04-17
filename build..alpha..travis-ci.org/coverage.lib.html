@@ -1,5 +1,7 @@
-<html lang="en"><head>
-    <title>Code coverage report for node-npmtest-grunt-text-replace/grunt-text-replace/Gruntfile.js</title>
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node-npmtest-grunt-text-replace/node_modules/grunt-text-replace/Gruntfile.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,7 +194,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-grunt-text-replace">npmtest-grunt-text-replace (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-grunt-text-replace/grunt-text-replace/Gruntfile.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-grunt-text-replace/node_modules/grunt-text-replace/Gruntfile.js</span></h1>
     <h2>
         
         Statements: <span class="metric">5.88% <small>(1 / 17)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -208,11 +210,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> » <a href="index.html">node-npmtest-grunt-text-replace/grunt-text-replace/</a> » Gruntfile.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-grunt-text-replace/node_modules/grunt-text-replace/</a> &#187; Gruntfile.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tbody><tr><td class="line-count">1
+<tr><td class="line-count">1
 2
 3
 4
@@ -424,9 +426,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">module.exports = <span class="fstat-no" title="function not covered">function(grunt) {</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">module.exports = <span class="fstat-no" title="function not covered" >function(grunt) {</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  grunt.initConfig({</span>
+<span class="cstat-no" title="statement not covered" >  grunt.initConfig({</span>
     jshint: {
       all: [
         'Gruntfile.js',
@@ -450,16 +452,16 @@
           to: 'M$2'
         }, {
           from: /"localhost"/,
-          to: <span class="fstat-no" title="function not covered">function (matchedWord, index, fullText, regexMatches) {</span>
-<span class="cstat-no" title="statement not covered">            return '"www.mysite.com"';</span>
+          to: <span class="fstat-no" title="function not covered" >function (matchedWord, index, fullText, regexMatches) {</span>
+<span class="cstat-no" title="statement not covered" >            return '"www.mysite.com"';</span>
           }
         }, {
           from: '&lt;p&gt;Version:&lt;/p&gt;',
           to: '&lt;p&gt;Version: &lt;%= grunt.template.date("18 Feb 2013", "yyyy-mm-dd") %&gt;&lt;/p&gt;'
         }, {
           from: /[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{2,4}/g,
-          to: <span class="fstat-no" title="function not covered">function() {</span>
-<span class="cstat-no" title="statement not covered">            return "&lt;%= grunt.template.date('18 Feb 2013', 'dd/mm/yyyy') %&gt;";</span>
+          to: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >            return "&lt;%= grunt.template.date('18 Feb 2013', 'dd/mm/yyyy') %&gt;";</span>
           }
         }]
       },
@@ -481,8 +483,8 @@
         },
         replacements: [{
           from: /url\(.*\)/g,
-          to: <span class="fstat-no" title="function not covered">function () {</span>
-<span class="cstat-no" title="statement not covered">            return "url(&lt;% some unprocessed text %&gt;)";</span>
+          to: <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >            return "url(&lt;% some unprocessed text %&gt;)";</span>
           }
         }]
       }
@@ -497,11 +499,11 @@
 &nbsp;
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered">  grunt.loadTasks('tasks');</span>
-<span class="cstat-no" title="statement not covered">  grunt.loadNpmTasks('grunt-contrib-jshint');</span>
-<span class="cstat-no" title="statement not covered">  grunt.loadNpmTasks('grunt-contrib-nodeunit');</span>
+<span class="cstat-no" title="statement not covered" >  grunt.loadTasks('tasks');</span>
+<span class="cstat-no" title="statement not covered" >  grunt.loadNpmTasks('grunt-contrib-jshint');</span>
+<span class="cstat-no" title="statement not covered" >  grunt.loadNpmTasks('grunt-contrib-nodeunit');</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  grunt.registerTask('default', ['jshint', 'test']);</span>
+<span class="cstat-no" title="statement not covered" >  grunt.registerTask('default', ['jshint', 'test']);</span>
 &nbsp;
 /*
     A note on testing (ie. running: grunt test):
@@ -518,24 +520,23 @@
 &nbsp;
 */
 &nbsp;
-<span class="cstat-no" title="statement not covered">  grunt.registerTask('test', <span class="fstat-no" title="function not covered">function () {</span></span>
-<span class="cstat-no" title="statement not covered">    var isForceOn = grunt.option('force') || false;</span>
-<span class="cstat-no" title="statement not covered">    var taskList = ['nodeunit:tests'];</span>
-<span class="cstat-no" title="statement not covered">    if (isForceOn) {</span>
-<span class="cstat-no" title="statement not covered">      taskList.push('nodeunit:errors');</span>
+<span class="cstat-no" title="statement not covered" >  grunt.registerTask('test', <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >    var isForceOn = grunt.option('force') || false;</span>
+<span class="cstat-no" title="statement not covered" >    var taskList = ['nodeunit:tests'];</span>
+<span class="cstat-no" title="statement not covered" >    if (isForceOn) {</span>
+<span class="cstat-no" title="statement not covered" >      taskList.push('nodeunit:errors');</span>
     }
-<span class="cstat-no" title="statement not covered">    taskList.push('replace');</span>
-<span class="cstat-no" title="statement not covered">    taskList.push('nodeunit:replace');</span>
-<span class="cstat-no" title="statement not covered">    grunt.task.run(taskList);</span>
+<span class="cstat-no" title="statement not covered" >    taskList.push('replace');</span>
+<span class="cstat-no" title="statement not covered" >    taskList.push('nodeunit:replace');</span>
+<span class="cstat-no" title="statement not covered" >    grunt.task.run(taskList);</span>
   });
 };
 &nbsp;
 &nbsp;</pre></td></tr>
-</tbody></table></pre>
+</table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 21:39:40 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 15:38:13 GMT+0000 (UTC)</div>
 </div>
-
-
-</body></html>
+</body>
+</html>
