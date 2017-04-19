@@ -1,4 +1,7 @@
-# test coverage for  [grunt-text-replace (v0.4.0)](https://github.com/yoniholmes/grunt-text-replace)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-text-replace.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-text-replace) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-text-replace.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-text-replace)
+# npmtest-grunt-text-replace
+
+#### basic test coverage for  [grunt-text-replace (v0.4.0)](https://github.com/yoniholmes/grunt-text-replace)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-text-replace.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-text-replace) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-text-replace.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-text-replace)
+
 #### Replace text in files using strings, regexs or functions.
 
 [![NPM](https://nodei.co/npm/grunt-text-replace.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-text-replace)
